@@ -8,7 +8,7 @@
   height: auto;
 }
 .Business h3 {
-  margin: 10px 0 0 0;
+  margin-bottom: 1rem;
 }
 .business-info {
   padding: 0.5rem;
@@ -28,7 +28,7 @@
 }
 .business-details .rating,
 .business-details .category {
-  color: rgb(172, 147, 0);
+  color: saddlebrown;
   font-weight: bold;
 }
 .business-details .category {
