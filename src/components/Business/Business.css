@@ -1,0 +1,36 @@
+.Business {
+  max-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.Business img {
+  width: 100%;
+  height: auto;
+}
+.Business h3 {
+  margin: 10px 0 0 0;
+}
+.business-info {
+  padding: 0.5rem;
+}
+.business-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.business-address {
+  font-size: 0.8rem;
+  color: #555;
+}
+.business-details {
+  text-align: right;
+  font-size: 0.8rem;
+}
+.business-details .rating,
+.business-details .category {
+  color: rgb(172, 147, 0);
+  font-weight: bold;
+}
+.business-details .category {
+  font-size: 1rem;
+}
