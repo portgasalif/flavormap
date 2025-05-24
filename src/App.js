@@ -7,9 +7,7 @@ function App() {
   return (
     <div className="App">
       <SearchBar />
-      <div className="business-list">
-        <BusinessList businesses={businesses} />
-      </div>
+      <BusinessList businesses={businesses} />
     </div>
   );
 }
