@@ -1,6 +1,7 @@
 .search-bar {
   background: saddlebrown;
   min-height: 60vh;
+  margin-bottom: 2rem;
 }
 .search-bar-header {
   text-align: center;
