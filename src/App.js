@@ -1,20 +1,14 @@
 import "./App.css";
-import Business from "./components/Business/Business";
 import SearchBar from "./components/SearchBar/SearchBar";
-import business from "./data/mockData";
+import BusinessList from "./components/BusinessList/BusinessList";
+import businesses from "./data/mockData";
 
 function App() {
   return (
     <div className="App">
       <SearchBar />
       <div className="business-list">
-        <Business business={business} />
-        <Business business={business} />
-        <Business business={business} />
-        <Business business={business} />
-        <Business business={business} />
-        <Business business={business} />
-        <Business business={business} />
+        <BusinessList businesses={businesses} />
       </div>
     </div>
   );
