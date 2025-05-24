@@ -1,5 +1,5 @@
 import Business from "../Business/Business";
-
+import "./BusinessList.css";
 function BusinessList({ businesses }) {
   return (
     <div className="business-list">
@@ -7,6 +7,6 @@ function BusinessList({ businesses }) {
         return <Business key={business.name} business={business} />;
       })}
     </div>
-  );
+  )
 }
 export default BusinessList;

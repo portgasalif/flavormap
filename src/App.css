@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  max-width: 1200px;
-}
+
 .search-bar {
   margin-bottom: 2rem;
 }
 .business-list {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
