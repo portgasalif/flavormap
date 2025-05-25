@@ -31,13 +31,22 @@
   border: 0;
   padding: 1rem;
   color: beige;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   font-weight: bold;
   font-size: 1rem;
+}
+.search-bar-sort-option.active {
+  background-color: beige;
+  color: saddlebrown;
+  border-bottom: none;
+  transform: none;
 }
 .search-bar-sort-option:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+.search-bar-sort-option.active:hover {
+  transform: none;
 }
 .search-bar-fields {
   display: flex;
