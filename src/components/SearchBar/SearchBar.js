@@ -76,7 +76,7 @@ function SearchBar({ searchYelp }) {
             value={location}
             onChange={handleLocationChange}
           >
-            <option value="">Pilih Lokasi</option>
+            <option value="">Select Location</option>
             <option value="Jakarta, DKI Jakarta">Jakarta, DKI Jakarta</option>
             <option value="Surabaya, Jawa Timur">Surabaya, Jawa Timur</option>
             <option value="Bandung, Jawa Barat">Bandung, Jawa Barat</option>
