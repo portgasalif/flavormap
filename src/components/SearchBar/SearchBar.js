@@ -9,15 +9,12 @@ function SearchBar({ searchYelp }) {
   const handleOptionSelect = (option) => {
     setSortOption(option);
   };
-
   const handleSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
   };
-
   const handleLocationChange = (event) => {
     setLocation(event.target.value);
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     if (searchTerm && location) {
@@ -79,15 +76,19 @@ function SearchBar({ searchYelp }) {
             value={location}
             onChange={handleLocationChange}
           >
-            <option value="">Select Location</option>
-            <option value="New York, NY">New York, NY</option>
-            <option value="Los Angeles, CA">Los Angeles, CA</option>
-            <option value="San Francisco, CA">San Francisco, CA</option>
-            <option value="Chicago, IL">Chicago, IL</option>
-            <option value="Miami, FL">Miami, FL</option>
-            <option value="Seattle, WA">Seattle, WA</option>
-            <option value="Boston, MA">Boston, MA</option>
-            <option value="Austin, TX">Austin, TX</option>
+            <option value="">Pilih Lokasi</option>
+            <option value="Jakarta, DKI Jakarta">Jakarta, DKI Jakarta</option>
+            <option value="Surabaya, Jawa Timur">Surabaya, Jawa Timur</option>
+            <option value="Bandung, Jawa Barat">Bandung, Jawa Barat</option>
+            <option value="Medan, Sumatera Utara">Medan, Sumatera Utara</option>
+            <option value="Semarang, Jawa Tengah">Semarang, Jawa Tengah</option>
+            <option value="Makassar, Sulawesi Selatan">
+              Makassar, Sulawesi Selatan
+            </option>
+            <option value="Palembang, Sumatera Selatan">
+              Palembang, Sumatera Selatan
+            </option>
+            <option value="Denpasar, Bali">Denpasar, Bali</option>
           </select>
         </div>
 
