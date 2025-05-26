@@ -1,15 +1,15 @@
 .search-bar {
-  background: saddlebrown;
+  background: linear-gradient(135deg, #065f46, #047857);
   max-height: 60vh;
   margin-bottom: 2rem;
 }
 .search-bar-header {
   text-align: center;
-  background-color: chocolate;
+  background-color: #059669;
   padding: 1rem;
 }
 .search-bar-header h1 {
-  color: beige;
+  color: white;
 }
 
 .search-bar-main {
@@ -23,21 +23,21 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  border-bottom: 2px solid beige;
+  border-bottom: 2px solid white;
   margin-bottom: 1rem;
 }
 .search-bar-sort-option {
   background: transparent;
   border: 0;
   padding: 1rem;
-  color: beige;
+  color: white;
   transition: all 0.3s ease;
   font-weight: bold;
   font-size: 1rem;
 }
 .search-bar-sort-option.active {
-  background-color: beige;
-  color: saddlebrown;
+  background-color: white;
+  color: #065f46;
   border-bottom: none;
   transform: none;
 }
@@ -57,26 +57,26 @@
   padding: 12px 15px;
   width: 300px;
   border-radius: 8px;
-  border: 2px solid beige;
+  background-color: #f0fdf4;
+  color: #065f46;
+  border: 2px solid #059669;
   outline: none;
   font-size: 1rem;
-  background-color: beige;
-  color: saddlebrown;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 .search-bar-submit-btn {
-  background: beige;
-  color: saddlebrown;
+  background-color: #f0fdf4;
+  color: #065f46;
+  border: 2px solid #059669;
   padding: 10px;
   border-radius: 8px;
-  border: none;
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 2rem;
 }
 .search-bar-submit-btn:hover {
-  background-color: wheat;
+  background-color: #dcfce7;
   cursor: pointer;
 }
 @media (max-width: 768px) {
