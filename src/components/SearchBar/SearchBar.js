@@ -23,7 +23,6 @@ function SearchBar({ searchYelp }) {
     if (searchTerm && location) {
       searchYelp(searchTerm, location, sortOption);
       setSearchTerm("");
-      setLocation("");
     } else {
       alert("Please enter both a search term and a location.");
     }
