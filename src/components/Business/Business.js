@@ -2,7 +2,13 @@ import "./Business.css";
 function Business({ business }) {
   return (
     <div className="Business">
-      <img src={business.imageSrc} alt={business.name} />
+      <img
+        src={
+          business.imageSrc ||
+          "https://via.placeholder.com/300x200?text=No+Image"
+        }
+        alt={business.name}
+      />
       <div className="business-info">
         <h3>{business.name}</h3>
         <div className="business-content">

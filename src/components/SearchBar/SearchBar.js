@@ -21,11 +21,11 @@ function SearchBar({ searchYelp }) {
     event.preventDefault();
     if (searchTerm && location) {
       searchYelp(searchTerm, location, sortOption);
+      setSearchTerm("");
+      setLocation("");
     } else {
       alert("Please enter both a search term and a location.");
     }
-    setSearchTerm("");
-    setLocation("");
   };
   return (
     <div className="search-bar">
@@ -46,21 +46,21 @@ function SearchBar({ searchYelp }) {
           </button>
           <button
             className={
-              sortOption === "highest_rated"
+              sortOption === "rating"
                 ? "search-bar-sort-option active"
                 : "search-bar-sort-option"
             }
-            onClick={() => handleOptionSelect("highest_rated")}
+            onClick={() => handleOptionSelect("rating")}
           >
             Highest Rated
           </button>
           <button
             className={
-              sortOption === "most_reviewed"
+              sortOption === "review_count"
                 ? "search-bar-sort-option active"
                 : "search-bar-sort-option"
             }
-            onClick={() => handleOptionSelect("most_reviewed")}
+            onClick={() => handleOptionSelect("review_count")}
           >
             Most Reviewed
           </button>
@@ -73,13 +73,23 @@ function SearchBar({ searchYelp }) {
             value={searchTerm}
             onChange={handleSearchTermChange}
           />
-          <input
+          <select
             className="search-bar-field"
-            type="text"
-            placeholder="Where?"
             value={location}
             onChange={handleLocationChange}
-          />
+          >
+            <option value="">Select Location</option>
+            <option value="New York, NY">New York, NY</option>
+            <option value="Los Angeles, CA">Los Angeles, CA</option>
+            <option value="San Francisco, CA">San Francisco, CA</option>
+            <option value="Chicago, IL">Chicago, IL</option>
+            <option value="Miami, FL">Miami, FL</option>
+            <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Kuala Lumpur, Malaysia">
+              Kuala Lumpur, Malaysia
+            </option>
+          </select>
         </div>
 
         <button
