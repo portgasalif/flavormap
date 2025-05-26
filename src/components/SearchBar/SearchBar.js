@@ -1,7 +1,7 @@
 import "./SearchBar.css";
 import React, { useState } from "react";
 
-function SearchBar() {
+function SearchBar({ searchYelp }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
   const [sortOption, setSortOption] = useState("best_match");
@@ -19,9 +19,13 @@ function SearchBar() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(
-      `Searching Yelp with ${searchTerm}, ${location}, ${sortOption}`
-    );
+    if (searchTerm && location) {
+      searchYelp(searchTerm, location, sortOption);
+    } else {
+      alert("Please enter both a search term and a location.");
+    }
+    setSearchTerm("");
+    setLocation("");
   };
   return (
     <div className="search-bar">
