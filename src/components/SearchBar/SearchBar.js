@@ -1,5 +1,5 @@
 import "./SearchBar.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function SearchBar({ searchYelp }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,6 +17,7 @@ function SearchBar({ searchYelp }) {
   const handleLocationChange = (event) => {
     setLocation(event.target.value);
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (searchTerm && location) {
@@ -27,6 +28,7 @@ function SearchBar({ searchYelp }) {
       alert("Please enter both a search term and a location.");
     }
   };
+
   return (
     <div className="search-bar">
       <div className="search-bar-header">
@@ -69,7 +71,7 @@ function SearchBar({ searchYelp }) {
           <input
             className="search-bar-field"
             type="text"
-            placeholder="Search Businesses"
+            placeholder="Search Cuisine (e.g., pizza, sushi, burger)"
             value={searchTerm}
             onChange={handleSearchTermChange}
           />
@@ -84,11 +86,9 @@ function SearchBar({ searchYelp }) {
             <option value="San Francisco, CA">San Francisco, CA</option>
             <option value="Chicago, IL">Chicago, IL</option>
             <option value="Miami, FL">Miami, FL</option>
-            <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
-            <option value="Singapore">Singapore</option>
-            <option value="Kuala Lumpur, Malaysia">
-              Kuala Lumpur, Malaysia
-            </option>
+            <option value="Seattle, WA">Seattle, WA</option>
+            <option value="Boston, MA">Boston, MA</option>
+            <option value="Austin, TX">Austin, TX</option>
           </select>
         </div>
 
@@ -103,4 +103,5 @@ function SearchBar({ searchYelp }) {
     </div>
   );
 }
+
 export default SearchBar;
