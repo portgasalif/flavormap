@@ -38,3 +38,36 @@
 .business-details .category {
   font-size: 1rem;
 }
+@media (max-width: 768px) {
+  .Business {
+    height: 320px;
+  }
+
+  .Business img {
+    height: 180px;
+  }
+
+  .business-info {
+    padding: 0.8rem;
+  }
+
+  .Business h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .Business {
+    margin: 0 10px;
+  }
+  .Business img {
+    height: 150px;
+  }
+
+  .business-content {
+  }
+  .business-address,
+  .business-details {
+    font-size: 1rem;
+  }
+}
